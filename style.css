@@ -1,0 +1,137 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Rosella';
+    src: url('./fonts/Rosella-Deco.ttf') format('truetype');
+}
+
+.navbar {
+    background-color: #010000;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #ffd78e;
+    color: #141414e4;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-produtos .nav-link.active:hover{
+    color: #ffd78e;
+}
+
+.navbar-toggler {
+    background-color: #ffd78e;
+}
+
+.section-title {
+    font-family: 'Rosella', serif;
+}
+
+#sobre-a-loja, #produtos{
+    background-color: #141414e4;
+}
+
+.text-colored {
+    color: #ffd78e;
+}
+
+.nav-produtos .nav-link.active,
+#fale-conosco button{
+    background-color: #ffd78e;
+    color: black;
+}
+
+.nav-produtos .nav-link:hover {
+color: rgb(74, 72, 72);
+}
+
+.icon{
+    font-size: 40px;
+    list-style: none;
+}
+
+#telefone::placeholder {
+    color: #b3b3b3;
+}
+
+.color-simple {
+    color: aliceblue;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-toggler {
+        margin: 0 auto; /* Centraliza o botão no mobile */
+    }
+
+    #menu-navegacao {
+        text-align: center; /* Centraliza o texto no mobile */
+    }
+
+    #menu-navegacao .nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #menu-navegacao .nav-link {
+        margin-bottom: 10px; 
+    }
+}
+
+/* Cabeçalho alinhado lado a lado no desktop */
+@media (min-width: 992px) {
+    #cabecalho .container {
+        flex-direction: row; 
+    }
+
+    #menu-navegacao {
+        text-align: right; 
+    }
+
+    #menu-navegacao .nav {
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    #menu-navegacao .nav-link {
+        margin-bottom: 0;
+        margin-left: 10px; 
+    }
+}
+
+.carousel-inner img {
+    width: 100%; /* Ajusta a largura ao contêiner do carrossel */
+    height: 400px; /* Define uma altura fixa */
+    object-fit: cover; /* Preenche o espaço mantendo proporção, cortando o excedente */
+}
+
+/* Garantir que as imagens sejam responsivas */
+.container img {
+    max-width: 100%; /* Não ultrapasse o contêiner */
+    height: auto;    /* Mantenha a proporção */
+}
+
+/* Limitar altura do carrossel */
+.carousel img {
+    max-height: 400px; /* Altura máxima para imagens do carrossel */
+    object-fit: cover; /* Preenchimento proporcional */
+}
+
+/* Ajustar imagens em seções específicas */
+.col-md-4 img {
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 8px; 
+}
